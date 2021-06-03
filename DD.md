@@ -77,4 +77,7 @@ Detailed description of the project.
 ### Build the game
 
 - Create new Game with a random word to be guessed, store user's answers and update game's state regularly.
-- Since the game is built with the Telegram platform, so the game interface is created with only unicode characters and emoji.
+- If the nb errores haven't reached Maximum number then continue recieve letter from user's guess until the word found
+- If the nb errores, end the game.
+- And some more features to handle and respond user's requests like: quit the game, show the last game. 
+- Since the game is built on the Telegram platform, so the game interface is created with only unicode characters and emoji.
