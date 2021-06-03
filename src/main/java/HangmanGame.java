@@ -1,11 +1,9 @@
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.Scanner;
 import java.util.stream.Collectors;
 
 // We are going to create a Hangman Game with Java keywords :)
@@ -26,8 +24,8 @@ public class HangmanGame {
             "TRANSIENT", "TRUE", "TRY", "VOID", "VOLATILE", "WHILE"
     };
 
-    //Hangman's status showed as figure
-    String[] HangmanWordBank;
+    //Hangman's state showed as figure
+    String[] HangmanFigures;
 
     public static final Random RANDOM = new Random();
     // Max errors before user lose
@@ -39,7 +37,7 @@ public class HangmanGame {
     private int nbErrors;
     // letters already entered by user
     private ArrayList <String> letters = new ArrayList <> ();
-    //Current game status
+    //Current game state
     private String current = "";
     private int help = 0;
 
@@ -61,7 +59,7 @@ public class HangmanGame {
 
         try{
             Path path = Paths.get("src/main/resources/HangmanWordBank.txt");
-            this.HangmanWordBank = Files.lines(path).collect(Collectors.joining("\n")).split("\n0\n");
+            this.HangmanFigures = Files.lines(path).collect(Collectors.joining("\n")).split("\n0\n");
             path = Paths.get("src/main/resources/HangmanWords.txt");
             this.WORDS = Files.lines(path).collect(Collectors.joining("\n")).split("\n");
         } catch(IOException e){}
@@ -136,7 +134,7 @@ public class HangmanGame {
         }
         String a = "Enter a letter : ";
         // display current state
-        a += "\n" + HangmanWordBank[nbErrors%(HangmanWordBank.length)];
+        a += "\n" + HangmanFigures[nbErrors%(HangmanFigures.length)];
         a += "\n" + wordFoundContent();
         if (wordFound()) {
             a += "\n" + "You win the game with the computer help!  (ᵔᴥᵔ) \n";
@@ -166,7 +164,7 @@ public class HangmanGame {
             enter(str);
 
             // display current state
-            a += "\n" + HangmanWordBank[nbErrors%(HangmanWordBank.length)];
+            a += "\n" + HangmanFigures[nbErrors%(HangmanFigures.length)];
             a += "\n" + wordFoundContent() +"\n";
 
             // check if word is found
