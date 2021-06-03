@@ -78,4 +78,4 @@ Detailed description of the project.
 
 - Create new Game with a random word to be guessed, store user's answers and update game's state regularly.
 - Create Game Logic.
-- Because the game is built with the Telegram platform, so the game interface is created with only unicode characters and emoji.
+- Since the game is built with the Telegram platform, so the game interface is created with only unicode characters and emoji.
