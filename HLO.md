@@ -9,7 +9,7 @@ The Hangman Game Bot is an educational game for either vocabulary review or rela
 
 The program can give you a free hint if you have no idea to guess the next letter.
 
-The program stores your last game you'vs just played.
+The program stores your last game you've just played.
 
 The program uses ASCII text art to represent your figure of a man being hung by neck, illustration will update everytime you guess a wrong letter.  
 
