@@ -1,5 +1,5 @@
 # Death_Penalty_Game
-A guessing gamer played on Telegram chat.
+A guessing game played on Telegram chat.
 Quick hangman game 
 
 ![image](https://user-images.githubusercontent.com/69846657/121778640-7bf82d00-cba0-11eb-8758-7ee9191ce80d.png)
