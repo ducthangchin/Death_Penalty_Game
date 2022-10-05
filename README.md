@@ -11,6 +11,11 @@ Quick hangman game
 ![image](https://user-images.githubusercontent.com/69846657/121778592-3b001880-cba0-11eb-814c-ab912ee5fc86.png)
 
 
+# Read more: 
+- [High level overview](HLO.md)
+- [Design document](DD.md)
+
+
 
 
 
