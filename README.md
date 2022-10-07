@@ -1,4 +1,4 @@
-# Death_Penalty_Game
+# Telegram bot game
 A guessing game played on Telegram chat.
 Quick hangman game 
 
